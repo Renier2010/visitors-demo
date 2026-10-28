@@ -23,3 +23,11 @@ The count keeps going after `docker compose down` and `docker compose up -d`, be
     docker compose down
 
 Use `docker compose down -v` to also delete the stored count.
+
+## Endpoints
+
+| Path | What it returns |
+|---|---|
+| `/` | Adds 1 to the visit counter and returns it |
+| `/health` | `{"status": "ok"}` for health checks |
+| `/version` | The app version |
